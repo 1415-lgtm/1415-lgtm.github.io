@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Life is a fucking movie</title>
-        <link>http://1415-lgtm.github.io/</link>
+        <link>https://1415-lgtm.github.io/</link>
         <description>Life is a fucking movie</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jun 2022 01:59:11 &#43;0800</lastBuildDate>
-            <atom:link href="http://1415-lgtm.github.io/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://1415-lgtm.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>First_post</title>
-    <link>http://1415-lgtm.github.io/first_post/</link>
+    <link>https://1415-lgtm.github.io/first_post/</link>
     <pubDate>Mon, 06 Jun 2022 01:59:11 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://1415-lgtm.github.io/first_post/</guid>
+    <guid>https://1415-lgtm.github.io/first_post/</guid>
     <description><![CDATA[First_post1111111111111199999999999999999999999999999999999999999999 123456789111111111111111111999999999999999999999999999999999999999999999999999999999]]></description>
 </item>
 </channel>
