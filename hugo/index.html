@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>hugo的使用教程 - Life is a fucking movie</title><meta name="Description" content="Life is a fucking movie"><meta property="og:title" content="hugo的使用教程" />
+<meta property="og:description" content="静态网页 HUGO 第一步安装HUGO 官网地址 The world&rsquo;s fastest framework for building websites 选择版本地址 Releases · gohugoio/hugo 选择此版本 extended为扩展版本 解压到自己指定的目录 第二步配置环境变" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://1415-lgtm.github.io/hugo/" /><meta property="og:image" content="https://1415-lgtm.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-07T00:44:35+08:00" />
+<meta property="article:modified_time" content="2022-06-07T00:44:35+08:00" /><meta property="og:site_name" content="我的网站" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://1415-lgtm.github.io/logo.png"/>
+
+<meta name="twitter:title" content="hugo的使用教程"/>
+<meta name="twitter:description" content="静态网页 HUGO 第一步安装HUGO 官网地址 The world&rsquo;s fastest framework for building websites 选择版本地址 Releases · gohugoio/hugo 选择此版本 extended为扩展版本 解压到自己指定的目录 第二步配置环境变"/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://1415-lgtm.github.io/hugo/" /><link rel="prev" href="https://1415-lgtm.github.io/first_post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "hugo的使用教程",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/1415-lgtm.github.io\/hugo\/"
+        },"genre": "posts","wordcount":  752 ,
+        "url": "https:\/\/1415-lgtm.github.io\/hugo\/","datePublished": "2022-06-07T00:44:35+08:00","dateModified": "2022-06-07T00:44:35+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Life is a fucking movie"></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Life is a fucking movie"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">hugo的使用教程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>xxxx</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-07">2022-06-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;752 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一步安装hugo">第一步安装HUGO</a></li>
+    <li><a href="#第二步配置环境变量">第二步配置环境变量</a></li>
+    <li><a href="#第三步新建项目创建新站点">第三步新建项目(创建新站点)</a></li>
+    <li><a href="#第四步安装主题">第四步安装主题</a></li>
+    <li><a href="#第五步写入文章等数据">第五步写入文章等数据</a></li>
+    <li><a href="#第六步启用启动-hugo-服务器">第六步启用<strong>启动 Hugo 服务器</strong></a></li>
+    <li><a href="#第七步-部署到网站上">第七步 部署到网站上</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="静态网页-hugo">静态网页 HUGO</h1>
+<h2 id="第一步安装hugo">第一步安装HUGO</h2>
+<p>官网地址</p>
+<p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">The world&rsquo;s fastest framework for building websites</a></p>
+<p>选择版本地址</p>
+<p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Releases · gohugoio/hugo</a></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled.png"
+        title="Untitled" /></p>
+<p>选择此版本</p>
+<p>extended为扩展版本</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%201.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%201.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%201.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%201.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%201.png"
+        title="Untitled" /></p>
+<p>解压到自己指定的目录</p>
+<h2 id="第二步配置环境变量">第二步配置环境变量</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%202.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%202.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%202.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%202.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%202.png"
+        title="Untitled" /></p>
+<p>测试是否安装成功</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%203.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%203.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%203.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%203.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%203.png"
+        title="Untitled" /></p>
+<h2 id="第三步新建项目创建新站点">第三步新建项目(创建新站点)</h2>
+<p>hugo new site quickstart</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="n">站点名</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在你指定的目录创建新站点</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%204.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%204.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%204.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%204.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%204.png"
+        title="Untitled" /></p>
+<h2 id="第四步安装主题">第四步安装主题</h2>
+<p>主题官网</p>
+<p><a href="http://themes.gohugo.io" target="_blank" rel="noopener noreffer">Complete List</a></p>
+<p>这里采用下载压缩包形式</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%205.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%205.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%205.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%205.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%205.png"
+        title="Untitled" /></p>
+<p>然后将hugo-theme-stack-master文件名修改为hugo-theme-stack</p>
+<p>我用的主题地址</p>
+<p><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener noreffer">GitHub - CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers</a></p>
+<p> hugo-theme-stack里的exampleSite下的config.yaml和content复制到项目目录下</p>
+<p>并把config.toml修改为下面这样</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%206.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%206.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%206.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%206.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%206.png"
+        title="Untitled" /></p>
+<h2 id="第五步写入文章等数据">第五步写入文章等数据</h2>
+<p>新建文章(新建一篇文章放到post目录，方便以后生成聚合页面)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">post</span><span class="p">/</span><span class="n">myfirst</span><span class="p">.</span><span class="nb">md
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第六步启用启动-hugo-服务器">第六步启用<strong>启动 Hugo 服务器</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">server</span> <span class="n">-D</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Start </span><span class="n">building</span> <span class="n">sites</span> <span class="err">…</span>
+</span></span><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">v0</span><span class="p">.</span><span class="n">100</span><span class="p">.</span><span class="n">1</span><span class="p">-</span><span class="n">0afb4866e345d31cbbcbab4349e43f1d36122806</span><span class="p">+</span><span class="n">extended</span> <span class="n">windows</span><span class="p">/</span><span class="n">amd64</span> <span class="n">BuildDate</span><span class="p">=</span><span class="n">2022</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">01T10</span><span class="err">:</span><span class="n">11</span><span class="err">:</span><span class="n">48Z</span> <span class="n">VendorInfo</span><span class="p">=</span><span class="n">gohugoio</span>
+</span></span><span class="line"><span class="cl"><span class="n">Error</span><span class="err">:</span> <span class="n">Error</span> <span class="n">building</span> <span class="n">site</span><span class="err">:</span> <span class="s2">&#34;C:\CodeLearningLibrary\newhugo\studehugo\content\post\rich-content\index.md:38:4&#34;</span><span class="err">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">extract</span> <span class="n">shortcode</span><span class="err">:</span> <span class="n">template</span> <span class="k">for</span> <span class="n">shortcode</span> <span class="s2">&#34;bilibili&#34;</span> <span class="n">not</span> <span class="n">found</span>
+</span></span><span class="line"><span class="cl"><span class="n">Built</span> <span class="k">in</span> <span class="n">6</span> <span class="n">ms</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除所有模板 用{{}}扩起来的东西 包括括号</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%207.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%207.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%207.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%207.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%207.png"
+        title="Untitled" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Start </span><span class="n">building</span> <span class="n">sites</span> <span class="err">…</span>
+</span></span><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">v0</span><span class="p">.</span><span class="n">100</span><span class="p">.</span><span class="n">1</span><span class="p">-</span><span class="n">0afb4866e345d31cbbcbab4349e43f1d36122806</span><span class="p">+</span><span class="n">extended</span> <span class="n">windows</span><span class="p">/</span><span class="n">amd64</span> <span class="n">BuildDate</span><span class="p">=</span><span class="n">2022</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">01T10</span><span class="err">:</span><span class="n">11</span><span class="err">:</span><span class="n">48Z</span> <span class="n">VendorInfo</span><span class="p">=</span><span class="n">gohugoio</span>
+</span></span><span class="line"><span class="cl"><span class="n">WARN</span> <span class="n">2022</span><span class="p">/</span><span class="n">06</span><span class="p">/</span><span class="n">05</span> <span class="n">23</span><span class="err">:</span><span class="n">24</span><span class="err">:</span><span class="n">28</span> <span class="n">Search</span> <span class="n">page</span> <span class="n">not</span> <span class="n">found</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">page</span> <span class="n">with</span> <span class="n">layout</span><span class="err">:</span> <span class="n">search</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">WARN</span> <span class="n">2022</span><span class="p">/</span><span class="n">06</span><span class="p">/</span><span class="n">05</span> <span class="n">23</span><span class="err">:</span><span class="n">24</span><span class="err">:</span><span class="n">28</span> <span class="n">Archives</span> <span class="n">page</span> <span class="n">not</span> <span class="n">found</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">page</span> <span class="n">with</span> <span class="n">layout</span><span class="err">:</span> <span class="n">archives</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">WARN</span> <span class="n">2022</span><span class="p">/</span><span class="n">06</span><span class="p">/</span><span class="n">05</span> <span class="n">23</span><span class="err">:</span><span class="n">24</span><span class="err">:</span><span class="n">28</span> <span class="n">Search</span> <span class="n">page</span> <span class="n">not</span> <span class="n">found</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">page</span> <span class="n">with</span> <span class="n">layout</span><span class="err">:</span> <span class="n">search</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">WARN</span> <span class="n">2022</span><span class="p">/</span><span class="n">06</span><span class="p">/</span><span class="n">05</span> <span class="n">23</span><span class="err">:</span><span class="n">24</span><span class="err">:</span><span class="n">28</span> <span class="n">Archives</span> <span class="n">page</span> <span class="n">not</span> <span class="n">found</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">page</span> <span class="n">with</span> <span class="n">layout</span><span class="err">:</span> <span class="n">archives</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                   <span class="p">|</span> <span class="n">EN</span> <span class="p">|</span> <span class="nb">ZH-CN</span> <span class="p">|</span> <span class="n">AR</span>
+</span></span><span class="line"><span class="cl"><span class="p">-------------------+----+-------+-----</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Pages</span>            <span class="p">|</span> <span class="n">47</span> <span class="p">|</span>    <span class="n">17</span> <span class="p">|</span> <span class="n">20</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Paginator</span> <span class="n">pages</span>  <span class="p">|</span>  <span class="n">1</span> <span class="p">|</span>     <span class="n">0</span> <span class="p">|</span>  <span class="n">0</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">Non-page</span> <span class="n">files</span>   <span class="p">|</span>  <span class="n">5</span> <span class="p">|</span>     <span class="n">4</span> <span class="p">|</span>  <span class="n">1</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Static</span> <span class="n">files</span>     <span class="p">|</span>  <span class="n">0</span> <span class="p">|</span>     <span class="n">0</span> <span class="p">|</span>  <span class="n">0</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Processed</span> <span class="n">images</span> <span class="p">|</span> <span class="n">48</span> <span class="p">|</span>    <span class="n">13</span> <span class="p">|</span>  <span class="n">3</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Aliases</span>          <span class="p">|</span> <span class="n">23</span> <span class="p">|</span>     <span class="n">7</span> <span class="p">|</span>  <span class="n">9</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Sitemaps</span>         <span class="p">|</span>  <span class="n">2</span> <span class="p">|</span>     <span class="n">1</span> <span class="p">|</span>  <span class="n">1</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Cleaned</span>          <span class="p">|</span>  <span class="n">0</span> <span class="p">|</span>     <span class="n">0</span> <span class="p">|</span>  <span class="n">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Built</span> <span class="k">in</span> <span class="n">942</span> <span class="n">ms</span>
+</span></span><span class="line"><span class="cl"><span class="n">Watching</span> <span class="k">for</span> <span class="n">changes</span> <span class="k">in</span> <span class="n">C:</span><span class="p">\</span><span class="n">CodeLearningLibrary</span><span class="p">\</span><span class="n">newhugo</span><span class="p">\</span><span class="n">studehugo</span><span class="p">\{</span><span class="n">archetypes</span><span class="p">,</span><span class="n">content</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">layouts</span><span class="p">,</span><span class="n">static</span><span class="p">,</span><span class="n">themes</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">Watching</span> <span class="k">for</span> <span class="n">config</span> <span class="n">changes</span> <span class="k">in</span> <span class="n">C:</span><span class="p">\</span><span class="n">CodeLearningLibrary</span><span class="p">\</span><span class="n">newhugo</span><span class="p">\</span><span class="n">studehugo</span><span class="p">\</span><span class="n">config</span><span class="p">.</span><span class="n">yaml</span><span class="p">,</span> <span class="n">C:</span><span class="p">\</span><span class="n">CodeLearningLibrary</span><span class="p">\</span><span class="n">newhugo</span><span class="p">\</span><span class="n">studehugo</span><span class="p">\</span><span class="n">themes</span><span class="p">\</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">\</span><span class="n">config</span><span class="p">.</span><span class="n">yaml</span>
+</span></span><span class="line"><span class="cl"><span class="n">Environment</span><span class="err">:</span> <span class="s2">&#34;development&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Serving</span> <span class="n">pages</span> <span class="n">from</span> <span class="n">memory</span>
+</span></span><span class="line"><span class="cl"><span class="n">Running</span> <span class="k">in</span> <span class="n">Fast</span> <span class="n">Render</span> <span class="n">Mode</span><span class="p">.</span> <span class="k">For</span> <span class="n">full</span> <span class="n">rebuilds</span> <span class="n">on</span> <span class="n">change</span><span class="err">:</span> <span class="n">hugo</span> <span class="n">server</span> <span class="p">-</span><span class="n">-disableFastRender</span>
+</span></span><span class="line"><span class="cl"><span class="n">Web</span> <span class="n">Server</span> <span class="n">is</span> <span class="n">available</span> <span class="n">at</span> <span class="n">http</span><span class="err">:</span><span class="p">//</span><span class="n">localhost</span><span class="err">:</span><span class="n">1313</span><span class="p">/</span> <span class="p">(</span><span class="n">bind</span> <span class="n">address</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Press</span> <span class="n">Ctrl</span><span class="p">+</span><span class="n">C</span> <span class="n">to</span> <span class="n">stop</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%208.png"
+        data-srcset="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%208.png, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%208.png 1.5x, %E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%208.png 2x"
+        data-sizes="auto"
+        alt="%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%20HUGO%2037127814d5854d0a93512476419e810f/Untitled%208.png"
+        title="Untitled" /></p>
+<p>到这里 因为教程难以阅读</p>
+<p>所以我们使用另一个主题</p>
+<p>主题地址</p>
+<p><a href="https://themes.gohugo.io/themes/loveit/" target="_blank" rel="noopener noreffer">LoveIt</a></p>
+<h2 id="第七步-部署到网站上">第七步 部署到网站上</h2>
+<p>第一步在GitHub上创建一个仓库</p>
+<p>命名  xxx.github.io</p>
+<p>第二步 迁移到仓库地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="p">-</span><span class="n">-theme</span><span class="p">=</span><span class="n">LoveIt</span> <span class="p">-</span><span class="n">-baseUrl</span><span class="p">=</span><span class="s2">&#34;[https://1415-lgtm.github.io/](http://1415-lgtm.github.io/)&#34;</span> <span class="n">-D</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后 进入创建好的public文件夹</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">public</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用git  push到仓库</p>
+<p>git init</p>
+<p>git add .</p>
+<p>git commit -m &ldquo;first push”</p>
+<p>git remote add origin <a href="https://github.com/1415-lgtm/1415-lgtm.github.io.git" target="_blank" rel="noopener noreffer">https://github.com/1415-lgtm/1415-lgtm.github.io.git</a></p>
+<p>git push -u origin master</p>
+<p>后续更新</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="p">-</span><span class="n">-theme</span><span class="p">=</span><span class="n">LoveIt</span> <span class="p">-</span><span class="n">-baseUrl</span><span class="p">=</span><span class="s2">&#34;[https://1415-lgtm.github.io/](http://1415-lgtm.github.io/)&#34;</span> <span class="n">-D</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>git add .</p>
+<p>git commit -m &ldquo;first push update”</p>
+<p>git push</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-06-07</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/hugo/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://1415-lgtm.github.io/hugo/" data-title="hugo的使用教程" data-via="xxxx"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://1415-lgtm.github.io/hugo/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://1415-lgtm.github.io/hugo/" data-title="hugo的使用教程"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://1415-lgtm.github.io/hugo/" data-title="hugo的使用教程"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://1415-lgtm.github.io/hugo/" data-title="hugo的使用教程"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/first_post/" class="prev" rel="prev" title="牵叔的博客"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>牵叔的博客</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

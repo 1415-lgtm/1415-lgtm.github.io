@@ -3,13 +3,29 @@
         <title>All Posts - Life is a fucking movie</title>
         <link>https://1415-lgtm.github.io/posts/</link>
         <description>All Posts | Life is a fucking movie</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jun 2022 01:59:11 &#43;0800</lastBuildDate><atom:link href="https://1415-lgtm.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 07 Jun 2022 00:44:35 &#43;0800</lastBuildDate><atom:link href="https://1415-lgtm.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo的使用教程</title>
+    <link>https://1415-lgtm.github.io/hugo/</link>
+    <pubDate>Tue, 07 Jun 2022 00:44:35 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>https://1415-lgtm.github.io/hugo/</guid>
+    <description><![CDATA[静态网页 HUGO 第一步安装HUGO 官网地址 The world&rsquo;s fastest framework for building websites 选择版本地址 Releases · gohugoio/hugo 选择此版本 extended为扩展版本 解压到自己指定的目录 第二步配置环境变]]></description>
+</item>
+<item>
     <title>牵叔的博客</title>
     <link>https://1415-lgtm.github.io/first_post/</link>
     <pubDate>Mon, 06 Jun 2022 01:59:11 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>https://1415-lgtm.github.io/first_post/</guid>
     <description><![CDATA[你好 你好我是牵叔. QQ:941238569 微信:hunqian1415]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://1415-lgtm.github.io/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5-hugo-37127814d5854d0a93512476419e810f/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>xxxx</author>
+    <guid>https://1415-lgtm.github.io/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5-hugo-37127814d5854d0a93512476419e810f/</guid>
+    <description><![CDATA[]]></description>
 </item>
 </channel>
 </rss>
